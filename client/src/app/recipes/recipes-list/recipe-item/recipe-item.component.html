@@ -1,0 +1,20 @@
+<a
+  [routerLink]="['/recipes', id]"
+  style="cursor: pointer"
+  class="list-group-item clearfix;"
+>
+  <div class="row">
+    <div class="col-9">
+      <h4 class="list-group-item-heading">{{ recipeProps.name }}</h4>
+      <p class="list-group-item-text">{{ recipeProps.description }}</p>
+    </div>
+    <div class="col-3 overflow-hidden">
+      <img
+        [src]="recipeProps.imagePath"
+        alt="{{ recipeProps.name }}"
+        class="img-responsive"
+        style="max-height: 50px"
+      />
+    </div>
+  </div>
+</a>
